@@ -24,7 +24,7 @@ interpolation, and customizable responsiveness modes.
 
 ## 📂 Files Structure
 
-    MyBright 23.11.2025-2.py     # Main program file
+    MyBright-23.11.2025-2.py     # Main program file
     day_baselines.json           # Auto-generated after calibration (optional)
     night_baselines.json         # Auto-generated after calibration (optional)
 
@@ -63,7 +63,7 @@ But you may install them manually if needed:
 
 Run the program:
 
-    python "MyBright 23.11.2025-2.py"
+    python "MyBright-23.11.2025-2.py"
 
 You'll be presented with these options after choosing the mode (Day/Night):
 
