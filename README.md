@@ -1,4 +1,4 @@
-# Auto Brightness Controller
+# MyBright
 
 A Python-based intelligent auto-brightness system that adjusts display
 brightness based on **actual screen content**, not ambient sensors.\
@@ -9,26 +9,24 @@ interpolation, and customizable responsiveness modes.
 
 ## ✨ Features
 
--   Dynamic brightness adjustment based on screen content\
--   Screenshot-based light detection (instant + smoothed modes)\
--   Optional edge-ignoring logic to avoid UI interference\
--   Manual baseline calibration workflow\
--   Day/Night profile switching\
--   Baseline persistence using JSON\
--   Linear interpolation between baselines\
--   Multiple responsiveness presets (Smooth → Instant)\
--   Threaded auto-adjust loop\
--   Automatic module installation\
+-   Dynamic brightness adjustment based on screen content
+-   Screenshot-based light detection (instant + smoothed modes)
+-   Manual baseline calibration workflow
+-   Day/Night profile switching
+-   Baseline persistence using JSON
+-   Linear interpolation between baselines
+-   Multiple responsiveness presets (Smooth → Instant)
+-   Threaded auto-adjust loop
+-   Automatic module installation
 -   Detailed content-light preview and analysis
 
 ------------------------------------------------------------------------
 
-## 📂 Project Structure
+## 📂 Files Structure
 
-    MyBright 23.11.2025-1.py     # Main program file
+    MyBright 23.11.2025-2.py     # Main program file
     day_baselines.json           # Auto-generated after calibration (optional)
     night_baselines.json         # Auto-generated after calibration (optional)
-    README.md                    # This file
 
 ------------------------------------------------------------------------
 
@@ -65,17 +63,17 @@ But you may install them manually if needed:
 
 Run the program:
 
-    python "MyBright 23.11.2025-1.py"
+    python "MyBright 23.11.2025-2.py"
 
-You'll be presented with options:
+You'll be presented with these options after choosing the mode (Day/Night):
 
-1.  **Start Auto Brightness**\
-2.  **Stop Auto Brightness**\
-3.  **Set Manual Baseline**\
-4.  **Show Current Baselines**\
-5.  **Preview Content Light**\
-6.  **Set Responsiveness**\
-7.  **Switch Mode (Day/Night)**\
+1.  **Start Auto Brightness**
+2.  **Stop Auto Brightness**
+3.  **Set Manual Baseline**
+4.  **Show Current Baselines**
+5.  **Preview Content Light**
+6.  **Set Responsiveness**
+7.  **Switch Mode (Day/Night)**
 8.  **Exit**
 
 ------------------------------------------------------------------------
@@ -96,8 +94,6 @@ baselines you provide.
 
 ## ⚙️ Responsiveness Modes
 
-  Mode       Interval   Threshold
-  ---------- ---------- -----------
   Smooth     2.0 sec    3%
   Balanced   1.0 sec    2%
   Fast       0.7 sec    1%
