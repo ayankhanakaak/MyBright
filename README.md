@@ -1,2 +1,132 @@
-# MyBright
-A Python-based auto-brightness controller that analyzes real-time screen content using screenshots, computes light intensity, and adjusts system brightness through learned baselines with interpolation, day/night profiles, and customizable responsiveness modes.
+# Auto Brightness Controller
+
+A Python-based intelligent auto-brightness system that adjusts display
+brightness based on **actual screen content**, not ambient sensors.\
+It uses real-time screenshot sampling, content-light analysis, baseline
+interpolation, and customizable responsiveness modes.
+
+------------------------------------------------------------------------
+
+## ✨ Features
+
+-   Dynamic brightness adjustment based on screen content\
+-   Screenshot-based light detection (instant + smoothed modes)\
+-   Optional edge-ignoring logic to avoid UI interference\
+-   Manual baseline calibration workflow\
+-   Day/Night profile switching\
+-   Baseline persistence using JSON\
+-   Linear interpolation between baselines\
+-   Multiple responsiveness presets (Smooth → Instant)\
+-   Threaded auto-adjust loop\
+-   Automatic module installation\
+-   Detailed content-light preview and analysis
+
+------------------------------------------------------------------------
+
+## 📂 Project Structure
+
+    MyBright 23.11.2025-1.py     # Main program file
+    day_baselines.json           # Auto-generated after calibration (optional)
+    night_baselines.json         # Auto-generated after calibration (optional)
+    README.md                    # This file
+
+------------------------------------------------------------------------
+
+## 🚀 How It Works
+
+1.  The program takes periodic screenshots.
+2.  Converts them to grayscale and computes mean pixel intensity.
+3.  Looks for the closest baseline(s) you created.
+4.  Interpolates the correct brightness.
+5.  Applies brightness through `screen_brightness_control`.
+
+Baselines allow the program to learn your preferred brightness for
+different screen-light conditions.
+
+------------------------------------------------------------------------
+
+## 🔧 Requirements
+
+The program automatically installs required modules:
+
+-   `numpy`
+-   `Pillow`
+-   `screen_brightness_control`
+
+But you may install them manually if needed:
+
+    pip install numpy
+    pip install Pillow
+    pip install screen_brightness_control
+
+------------------------------------------------------------------------
+
+## ▶️ Usage
+
+Run the program:
+
+    python "MyBright 23.11.2025-1.py"
+
+You'll be presented with options:
+
+1.  **Start Auto Brightness**\
+2.  **Stop Auto Brightness**\
+3.  **Set Manual Baseline**\
+4.  **Show Current Baselines**\
+5.  **Preview Content Light**\
+6.  **Set Responsiveness**\
+7.  **Switch Mode (Day/Night)**\
+8.  **Exit**
+
+------------------------------------------------------------------------
+
+## 🧪 Creating Baselines
+
+To teach the program:
+
+1.  Set your preferred brightness system-wide.
+2.  Choose "Set Manual Baseline".
+3.  Capture current screen or use a timed capture.
+4.  Confirm baseline.
+
+Over time, the program becomes more accurate depending on how many
+baselines you provide.
+
+------------------------------------------------------------------------
+
+## ⚙️ Responsiveness Modes
+
+  Mode       Interval   Threshold
+  ---------- ---------- -----------
+  Smooth     2.0 sec    3%
+  Balanced   1.0 sec    2%
+  Fast       0.7 sec    1%
+  Instant    0.5 sec    0%
+
+------------------------------------------------------------------------
+
+## 🛡️ Known Limitations
+
+-   Some systems restrict screenshot capture (ImageGrab).\
+-   Brightness control may require admin privileges on certain laptops.\
+-   High-frequency screenshot sampling can be CPU-intensive.
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+MIT License --- free to modify and distribute.
+
+------------------------------------------------------------------------
+
+## 👤 Author
+
+Developed by **Ayan Khan**\
+GitHub: *add your username here*
+
+------------------------------------------------------------------------
+
+## 🤝 Contributions
+
+Pull requests are welcome!\
+Feel free to report issues, improve baseline logic, or add GUI support.
