@@ -94,16 +94,16 @@ baselines you provide.
 
 ## ⚙️ Responsiveness Modes
 
-Smooth     2.0 sec    3%
-Balanced   1.0 sec    2%
-Fast       0.7 sec    1%
-Instant    0.5 sec    0%
+-   Smooth     2.0 sec    3%
+-   Balanced   1.0 sec    2%
+-   Fast       0.7 sec    1%
+-   Instant    0.5 sec    0%
 
 ------------------------------------------------------------------------
 
 ## 🛡️ Known Limitations
 
--   Some systems restrict screenshot capture (ImageGrab).\
+-   Some systems restrict screenshot capture (ImageGrab).
 -   Brightness control may require admin privileges on certain laptops.\
 -   High-frequency screenshot sampling can be CPU-intensive.
 
