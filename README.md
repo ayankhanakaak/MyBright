@@ -116,7 +116,7 @@ GPL-3.0
 
 ## 👤 Author
 
-Developed by **Ayan Khan**
+Developed by **Ayan Khan**\
 Message: I'll try to publish an EXE (executable program) for Windows systems as soon as possible.
 
 ------------------------------------------------------------------------
