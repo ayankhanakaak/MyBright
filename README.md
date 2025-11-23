@@ -104,25 +104,23 @@ baselines you provide.
 ## 🛡️ Known Limitations
 
 -   Some systems restrict screenshot capture (ImageGrab).
--   Brightness control may require admin privileges on certain laptops.\
--   High-frequency screenshot sampling can be CPU-intensive.
+-   Brightness control may require admin privileges on certain laptops.
 
 ------------------------------------------------------------------------
 
 ## 📄 License
 
-MIT License --- free to modify and distribute.
+GPL-3.0
 
 ------------------------------------------------------------------------
 
 ## 👤 Author
 
-Developed by **Ayan Khan**\
-GitHub: *add your username here*
+Developed by **Ayan Khan**
 
 ------------------------------------------------------------------------
 
 ## 🤝 Contributions
 
-Pull requests are welcome!\
-Feel free to report issues, improve baseline logic, or add GUI support.
+Pull requests are welcome!
+Feel free to report issues and suggest improvements.
