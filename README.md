@@ -122,5 +122,5 @@ Developed by **Ayan Khan**
 
 ## 🤝 Contributions
 
-Pull requests are welcome!
+Pull requests are welcome!\
 Feel free to report issues and suggest improvements.
