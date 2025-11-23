@@ -94,10 +94,10 @@ baselines you provide.
 
 ## ⚙️ Responsiveness Modes
 
--   Smooth
--   Balanced
--   Fast
--   Instant
+-   Smooth (2 sec intervals, 3% threshold)
+-   Balanced (1 sec intervals, 2% threshold)
+-   Fast (0.7 sec intervals, 1% threshold)
+-   Instant (0.5 sec intervals, 0% threshold)
 
 ------------------------------------------------------------------------
 
